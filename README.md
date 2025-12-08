@@ -1,55 +1,30 @@
-# Map and Data Library JTD Theme
-This is a customized version of the [Just the Docs](https://just-the-docs.com) theme for the [Map and Data Library](https://mdl.library.utoronto.ca) at the [University of Toronto Libraries](https://www.library.utoronto.ca).
+# Map and Data Library JTD template
+This is a customized version of the [Just the Docs](https://just-the-docs.com) template for the [Map and Data Library](https://mdl.library.utoronto.ca) at the [University of Toronto Libraries](https://www.library.utoronto.ca).
 
-# Using as a remote theme
-You can use this repository as a remote theme, powered by the [jekyll-remote-theme plugin](https://github.com/benbalter/jekyll-remote-theme). 
+# Using this template
+To use the this repository as a template to create new just-the-docs site, follow the steps below:
 
-To do so, add the following two lines to your site's `_config.yml` file:
-```yaml
-remote_theme: "MDLutoronto/jtd-theme"
+## Creating a new repository
+1. Click on the `Use this template` button at the top right of this repository page. Then, click on the `Create a new repository` button.
 
-plugins:
-    - ... (if you have other plugins)
-    - jekyll-remote-theme
-```
-Also, you need to install the `jekyll-remote-theme` (version 0.4.3) gem by adding this line to your `Gemfile`:
-```ruby
-gem "jekyll-remote-theme", "~> 0.4.3"
-```
+    <img src="assets/images/use-this-template.png" alt="Use this template button location" style="width:400px;"/>
 
-Every time you push changes to your repository, GitHub Pages will automatically fetch the latest version of the theme from this repository.
+2. You will be prompted to enter a repository name, description, and other settings.
+   1. For the owner, choose `MDLutoronto`.
+   2. Enter the name (also act as the slug) for your new Just-the-docs site.
+   3. Enter a description for your new repository.
+   4. Choose the repository visibility (public or private).
 
-# Development
-## Testing the theme locally
-To test the theme locally, you need to have [Ruby](https://www.ruby-lang.org/en/documentation/installation/) and [Bundler](https://bundler.io) installed.
-1. Clone the repository:
-```bash
-git clone https://github.com/MDLutoronto/jtd-theme.git
-```
-2. Navigate to the repository directory:
-```bash
-cd jtd-theme
-```
-3. Install the dependencies and serve the site with live reload:
-```bash
-bundle install && bundle exec jekyll serve --livereload
-```
-4. Open your web browser and go to `http://localhost:4000` to view the site.
+    {: .important }
+    > Note that to make the site visible to everyone, you need to choose `public` as the repository visibility eventually.
 
-## Deployment bug fix
-If the deployment keeps looping the following messages:
-```bash
-...
-Current status: deployment_queued
-Getting Pages deployment status...
-...
-```
-### Unpublishing and republishing the site
-A way to fix is is to go to the repository's **Settings** > **Pages**, unpublish the site by clicking the **Unpublish site** button, then republish it by clicking the **Save** button.
+    <img src="assets/images/create-a-new-repository.png" alt="Use this template button location" style="width:400px;"/>
 
-### Changing the source temporarily
-Another way to fix it is to try the following steps:
-1. Cancel the current deployment if it's still in progress.
-2. Go to the repository's **Settings** > **Pages**. Find the `Source` under the **Build and deployment** section, change it to `Deploy from a branch`
-3. Wait for a few seconds, then change it back to `GitHub Actions`.
-4. Retrigger the deployment by pushing a new commit, or re-running the workflow under the **Actions** > **Deploy Jekyll site to Pages**.
+5. Click on the `Create repository` button on the bottom right to create your new repository.
+
+    <img src="assets/images/create-repository.png" alt="Use this template button location" style="width:200px;"/>
+
+6. You will be prompted to the new repository page in a few seconds.
+   <img src="assets/images/generating-your-repository.png" alt="Use this template button location" style="width:200px;"/>
+
+   <img src="assets/images/new-repo.png" alt="Use this template button location" style="width:600px;"/>
