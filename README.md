@@ -18,13 +18,40 @@ To use the this repository as a template to create new just-the-docs site, follo
     {: .important }
     > Note that to make the site visible to everyone, you need to choose `public` as the repository visibility eventually.
 
-    <img src="assets/images/create-a-new-repository.png" alt="Use this template button location" style="width:400px;"/>
+    <img src="assets/images/create-a-new-repository.png" alt="Create a new repository form" style="width:400px;"/>
 
 5. Click on the `Create repository` button on the bottom right to create your new repository.
 
-    <img src="assets/images/create-repository.png" alt="Use this template button location" style="width:200px;"/>
+    <img src="assets/images/create-repository.png" alt="Create repository button" style="width:200px;"/>
 
 6. You will be prompted to the new repository page in a few seconds.
-   <img src="assets/images/generating-your-repository.png" alt="Use this template button location" style="width:200px;"/>
+   <img src="assets/images/generating-your-repository.png" alt="Generating your new repository" style="width:200px;"/>
 
-   <img src="assets/images/new-repo.png" alt="Use this template button location" style="width:600px;"/>
+   <img src="assets/images/new-repo.png" alt="New repository page" style="width:600px;"/>
+
+## Enabling GitHub Pages
+1. You will first need to enable GitHub Pages. Go to the `Settings` tab of your new repository. Then, click on the `Pages` option in the left sidebar.
+
+   <img src="assets/images/github-pages-setting.png" alt="Repository settings tab" style="width:600px;"/>
+
+## Modifying the configuration file
+
+1. In order publish the website, you will have to modify the `_config.yml` file in your new repository, with the following modifications:
+   1. First, replace the `jtd-theme` in the `url` field with the name of your new repository.
+   
+   For example, if your new repository is called `a-new-tutorial`, the `url` field should look like this:
+   ```yaml
+   url: "https://MDLutoronto.github.io/a-new-tutorial"
+   ```
+    
+   2. Then, replace the repository: "MDLutoronto/jtd-theme" with the name of your new repository. For example, if your new repository is called `a-new-tutorial`, the `repository` field should look like this:
+   ```yaml
+   url: "MDLutoronto/a-new-tutorial"
+   ```
+   <img src="assets/images/change-config.png" alt="Change _config.yml" style="width:600px;"/>
+
+   3. Commit the changes to the `_config.yml` file. Enter your commit message. Ensure the `Commit directly to the main branch` option is selected, then click on the `Commit changes` button.
+
+   <img src="assets/images/commit-changes.png" alt="Commit changes to _config.yml" style="width:600px;"/>
+
+You should now be able to see your new site at `https://MDLutoronto.github.io/your-repo-name` within a few minutes. For example, if your new repository is called `a-new-tutorial`, you should be able to see your new site at `https://MDLutoronto.github.io/a-new-tutorial`.
