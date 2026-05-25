@@ -30,6 +30,9 @@ license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/s
 ## If left empty, a default credit line will be used
 # footer_content: '<small><pre>Guide created by <a target="_blank" rel="noopener noreferrer" href="https://mdl.library.utoronto.ca/">Map & Data Library, University of Toronto</a>.</small></pre>'
 
+## Navigation buttons
+# navigation_buttons: false # Uncomment to disable the navigation buttons at the bottom of each page
+
 #################################################
 # 🚨 DANGER ZONE 🚨
 # ONLY CHANGE BELOW THIS LINE IF YOU KNOW WHAT YOU ARE DOING
