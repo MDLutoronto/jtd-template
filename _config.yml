@@ -11,7 +11,11 @@ nav_footer_logo_bottom_href: "https://library.utoronto.ca/"
 nav_footer_logo_top: "/assets/images/mdl_full_logo.png"
 nav_footer_logo_top_href: "https://mdl.library.utoronto.ca/"
 ## License information
-##  If left empty, a default Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license will be used
+## If `license_disabled` is `true`, license information will not be displayed, regardless of any other settings.
+license_disabled: false
+## If this option is left empty (and `license_disabled` is not set to `true`), the default license,
+## Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0),
+## will be used.
 license_name: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
 license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" # link to the license
 license_image_url: "https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" # image Link or image file path for the license
